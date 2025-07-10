@@ -35,7 +35,7 @@ jobs:
               run: terraform init
 
             - name: 'Terraform destroy'
-              run: terraform plan -destroy -out=tfplsn-destroy 
+              run: terraform plan -destroy -out=tfplan-destroy 
 
             - name: 'Terraform Apply Destroy'
               run: terraform apply -auto-approve tfplan-destroy
